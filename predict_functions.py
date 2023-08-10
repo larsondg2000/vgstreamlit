@@ -2,8 +2,7 @@ import torch
 from typing import List
 from torchvision import transforms
 from PIL import Image
-import matplotlib.pyplot as plt
-from pathlib import Path
+import urllib.request
 import streamlit as st
 
 
@@ -55,7 +54,6 @@ def pred_and_plot_image(model, image_path, class_names, transform, gpu):
             ]
         )
 
-
     # Make sure the model is on the target device
     cuda = torch.cuda.is_available()
 
@@ -95,8 +93,8 @@ def pred_and_plot_image(model, image_path, class_names, transform, gpu):
     # Plot image with predicted label and probability
 
     st.markdown("<h5 style='color: red;'>"
-                f"Pred: {class_names[target_image_pred_label]} | Prob: {target_image_pred_probs.max() * 100:.1f}% | Model: {model_name}"
+                f"Pred: {class_names[target_image_pred_label]} | "
+                f"Prob: {target_image_pred_probs.max() * 100:.1f}% | "
+                f"Model: {model_name}"
                 "</h5>", unsafe_allow_html=True)
     st.image(img, width=400)
-
-

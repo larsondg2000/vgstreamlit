@@ -25,7 +25,7 @@ with col31:
 
 with col32:
     st.title("")
-    st.image("images/cnn.jpg", width=700)
+
 
 st.divider()
 

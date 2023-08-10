@@ -144,7 +144,7 @@ with col10:
         model = load_checkpoint("RegNet_checkpoint.pth")
         predict_image(model,
                       uploaded_file,
-                      class_names = ['not_vangogh', 'vangogh'],
+                      class_names=['not_vangogh', 'vangogh'],
                       gpu="gpu")
 
 with col11:
