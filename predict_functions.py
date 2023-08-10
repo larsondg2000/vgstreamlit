@@ -6,6 +6,7 @@ import os
 import streamlit as st
 
 
+@st.cache_resource
 def load_checkpoint():
     """ Loads saved model checkpoint """
     url = "https://github.com/larsondg2000/vgstreamlit/RegNet_checkpoint.pth"
