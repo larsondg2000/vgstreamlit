@@ -2,13 +2,16 @@ import torch
 from typing import List
 from torchvision import transforms
 from PIL import Image
-import urllib.request
+import os
 import streamlit as st
 
 
-def load_checkpoint(model_checkpoint):
+def load_checkpoint():
     """ Loads saved model checkpoint """
-    saved_model = torch.load(model_checkpoint)
+    url = "https://github.com/larsondg2000/vgstreamlit/RegNet_checkpoint.pth"
+    filename = url.split('/')[-1]
+
+    saved_model = torch.load(filename)
     model = saved_model['arch']
 
     return model
