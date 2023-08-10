@@ -19,6 +19,11 @@ st.set_page_config(layout="wide")
 st.title("References")
 st.divider()
 
+para = "Code for streamlit project on Github: https://github.com/larsondg2000/vgstreamlit.git"
+
+st.markdown("<h6 style='text-align: center; color: blue; font-style: italic;'>"
+                f"{para}"
+                "</h6>", unsafe_allow_html=True)
 st.markdown("Van Gogh Museum [link](https://www.vangoghmuseum.nl/nl)")
 st.markdown("The Vincent Van Gogh Gallery [link](http://www.vggallery.com/index.html)")
 st.markdown("Kroller-Muller Museum [link](https://krollermuller.nl/)")
