@@ -2,7 +2,6 @@ import torch
 from typing import List
 from torchvision import transforms
 from PIL import Image
-import os
 import streamlit as st
 
 
@@ -40,7 +39,7 @@ def pred_and_plot_image(model, image_path, class_names, transform, gpu):
         gpu: cuda or cpu
    """
 
-    # Open image- convert('RGB') fixes issue with png images
+    # Open image convert('RGB') fixes issue with png images
     img = Image.open(image_path).convert('RGB')
 
     # Create transforms from image (if one doesn't exist)

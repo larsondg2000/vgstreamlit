@@ -127,7 +127,7 @@ with col121:
 
 with col222:
     st.write("")
-    st.image("images/mysig_resize.jpg", width=600)
+    st.image("images/mysig_resize.jpg", width=300)
     st.caption("Signature on My painting")
 
 with col323:
