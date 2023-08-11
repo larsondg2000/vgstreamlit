@@ -170,7 +170,7 @@ content3 = "The stamp on the back of my painting has faded or been partially was
            "The rough translation of the stamp is: Color Factory - Canvas and Drawing Items - House of Merlin- " \
            "Paul Denis Succ - Paris - 19 Medicis Road 19.  Merlin et Denis changed it's name to Dubois Beaux Arts " \
            "sometime in the early 20th century and the location changed from 19 Rue de Medicis  to 20 Rue Soufflot." \
-           "As shown below, Rue de medicis is about 10km from the van Gogh residence."
+           "As shown below, Rue de Medicis is about 10km from the van Gogh residence."
 
 st.markdown(content3)
 
