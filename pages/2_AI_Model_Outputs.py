@@ -25,11 +25,11 @@ with col31:
 
 with col32:
     st.title("")
-    st.image("images/cnn.jpg", width=700)
+
 
 st.divider()
 
-
+st.title("")
 st.header("My Painting Probabilities and Predictions")
 st.subheader("_Predictions and Probabilities from Three Models_")
 
@@ -44,8 +44,6 @@ with col2:
 with col3:
     st.image("images/vgg_out.png")
 
-st.divider()
-
 st.header("My Painting Probabilities and Predictions")
 st.subheader("_Segmented Images with EfficientNet_")
 col11, col21, col31 =st.columns(3)
@@ -59,9 +57,7 @@ with col21:
 with col31:
     st.image("images/close5_pred.png")
 
-st.divider()
-
-st.header("Random Paintings from validation Set")
+st.header("Random Paintings from Validation Set")
 st.subheader("_Random Van Gogh and Not Van Gogh Paintings with EfficientNet_")
 col12, col22, col32 =st.columns(3)
 
@@ -73,8 +69,6 @@ with col22:
 
 with col32:
     st.image("images/rando4.png")
-
-st.divider()
 
 st.header("Famous Paintings")
 st.subheader("_Da Vinci, Dali, and Surat Paintings with EfficientNet_")
