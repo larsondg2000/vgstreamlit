@@ -2,16 +2,14 @@ import torch
 from typing import List
 from torchvision import transforms
 from PIL import Image
+import matplotlib.pyplot as plt
+from pathlib import Path
 import streamlit as st
 
 
-@st.cache_resource
-def load_checkpoint():
+def load_checkpoint(model_checkpoint):
     """ Loads saved model checkpoint """
-    url = "https://github.com/larsondg2000/vgstreamlit/RegNet_checkpoint.pth"
-    filename = url.split('/')[-1]
-
-    saved_model = torch.load(filename)
+    saved_model = torch.load(model_checkpoint)
     model = saved_model['arch']
 
     return model
@@ -39,7 +37,7 @@ def pred_and_plot_image(model, image_path, class_names, transform, gpu):
         gpu: cuda or cpu
    """
 
-    # Open image convert('RGB') fixes issue with png images
+    # Open image- convert('RGB') fixes issue with png images
     img = Image.open(image_path).convert('RGB')
 
     # Create transforms from image (if one doesn't exist)
@@ -56,6 +54,7 @@ def pred_and_plot_image(model, image_path, class_names, transform, gpu):
                 ),
             ]
         )
+
 
     # Make sure the model is on the target device
     cuda = torch.cuda.is_available()
@@ -96,8 +95,8 @@ def pred_and_plot_image(model, image_path, class_names, transform, gpu):
     # Plot image with predicted label and probability
 
     st.markdown("<h5 style='color: red;'>"
-                f"Pred: {class_names[target_image_pred_label]} | "
-                f"Prob: {target_image_pred_probs.max() * 100:.1f}% | "
-                f"Model: {model_name}"
+                f"Pred: {class_names[target_image_pred_label]} | Prob: {target_image_pred_probs.max() * 100:.1f}% | Model: {model_name}"
                 "</h5>", unsafe_allow_html=True)
     st.image(img, width=400)
+
+

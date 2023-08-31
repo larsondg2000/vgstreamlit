@@ -19,9 +19,6 @@ st.set_page_config(layout="wide")
 st.title("References")
 st.divider()
 
-st.markdown("_Streamlit project files are located on Github:_ [link](https://github.com/larsondg2000/vgstreamlit.git)")
-
-
 st.markdown("Van Gogh Museum [link](https://www.vangoghmuseum.nl/nl)")
 st.markdown("The Vincent Van Gogh Gallery [link](http://www.vggallery.com/index.html)")
 st.markdown("Kroller-Muller Museum [link](https://krollermuller.nl/)")
