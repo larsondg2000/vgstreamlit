@@ -19,14 +19,8 @@ font = "sans serif"
 
 st.set_page_config(layout="wide")
 
-col1, col2 = st.columns([1, 2.5])
-
-with col1:
-    st.image("images/starrynight.jpg", width=330)
-
-with col2:
-    st.title("Is it a Van Gogh?")
-    st.subheader("_Analysis of a painting to determine if it could be an authentic Van Gogh_")
+st.title("Is it a van Gogh?")
+st.subheader("_Analysis of a painting to determine if it could be an authentic van Gogh_")
 st.divider()
 
 st.header("Vincent van Gogh")
@@ -141,10 +135,10 @@ with col10:
         image = Image.open(uploaded_file)
         plt.imshow(image)
         plt.axis("off")
-        model = load_checkpoint("RegNet_checkpoint.pth")
+        model = load_checkpoint()
         predict_image(model,
                       uploaded_file,
-                      class_names = ['not_vangogh', 'vangogh'],
+                      class_names=['not_vangogh', 'vangogh'],
                       gpu="gpu")
 
 with col11:
