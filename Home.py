@@ -33,7 +33,7 @@ with col3:
 with col4:
     content3 = "Vincent van Gogh (1853-1890) was a Dutch post-impressionist painter whose profound impact on the art " \
            "world continues to resonate today. Renowned for his emotionally charged and vibrant works, " \
-           "Van Gogh's unique artistic style is characterized by bold brushwork, intense color palettes, " \
+           "van Gogh's unique artistic style is characterized by bold brushwork, intense color palettes, " \
            "and an unparalleled ability to convey raw human emotion. Despite facing personal struggles and limited " \
            "recognition during his lifetime, his art has achieved legendary status, inspiring generations with " \
            "iconic pieces like Starry Night and Sunflowers. Van Gogh's innovative approach to depicting nature, " \

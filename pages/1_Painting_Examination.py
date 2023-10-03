@@ -23,7 +23,7 @@ st.divider()
 st.header("Front of Painting")
 st.subheader("Comparison to Other Works")
 
-content2 = "The style of the painting is like others from Van Gogh, the subject matter of wheat fields and cypress " \
+content2 = "The style of the painting is like others from van Gogh, the subject matter of wheat fields and cypress " \
            "trees appear frequently in his paintings.  Based on the style and subject matter, it is probably from the" \
            " time he was in Saint Remy.  Examining his other works, three paintings standout as very similar to " \
            "this painting- Wheatfield with Cypresses (June 1889), Road with Cypress and Star (May 1890), and " \
