@@ -119,7 +119,7 @@ st.markdown("<h5 style='text-align: center; color: blue;'>"
             f"{para2}"
             "</h5>", unsafe_allow_html=True)
 
-col9, col10, col11 = st.columns([3,3,3])
+col9, col10, col11 = st.columns([3, 3, 3])
 
 with col9:
     st.write("")
