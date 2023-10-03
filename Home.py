@@ -135,7 +135,7 @@ with col10:
         image = Image.open(uploaded_file)
         plt.imshow(image)
         plt.axis("off")
-        model = load_checkpoint()
+        model = load_checkpoint("RegNet_checkpoint.pth")
         predict_image(model,
                       uploaded_file,
                       class_names=['not_vangogh', 'vangogh'],

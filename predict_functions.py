@@ -55,7 +55,6 @@ def pred_and_plot_image(model, image_path, class_names, transform, gpu):
             ]
         )
 
-
     # Make sure the model is on the target device
     cuda = torch.cuda.is_available()
 
