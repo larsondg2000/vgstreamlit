@@ -93,6 +93,6 @@ There are some additional painting images in the sample_paintings folder that ar
 
 ## Prediction App
 Uses `predict_functions.py` and `predict_image.py` file to predict a user  uploaded image. It uses the 
-EfficientNet model for the prediction and displays the probability the image is "van Gogh" or "not van Gogh"
+RegNet model for the prediction and displays the probability the image is "van Gogh" or "not van Gogh"
 
     
