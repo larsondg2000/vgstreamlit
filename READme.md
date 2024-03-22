@@ -1,7 +1,14 @@
 # Streamlit Project for Van Gogh 
-## uses a subset from the VanGogh repository to create the streamlit projetct
 
-# Van Gogh Painting Classification using Pytorch and Pre-trained Models
+![alt-text](vg_mod.png "van Gogh Modern")
+
+## _uses a subset from the VanGogh repository to create the streamlit projetct_
+
+<img alt="alt-text" height="40" src="streamlit.png" title="Streamlit" width="200"/>
+
+## Van Gogh Painting Classification using Pytorch and Pre-trained Models
+
+<img alt="alt-text" height="40" src="pytorch.jpg" title="PyTorch" width="200"/>
 
 ## Models
 The project uses outputs from three pre-trained models:
@@ -26,6 +33,8 @@ The models have pre-trained weights with a trainable classifier. It uses three p
 
 ## Accuracy
 All three models achieved >90% accuracy during the validation runs after training.  The models results were fairly close with the Regnet model performing the best. 
+
+![alt-text](effnet 10.png "Accuracy")
 
 ## Image Data
 A custom dataset was created for the training, testing, and validation. Images were downloaded and sorted into two classes: "Van Gogh" and "not Van Gogh".  
@@ -95,4 +104,5 @@ There are some additional painting images in the sample_paintings folder that ar
 Uses `predict_functions.py` and `predict_image.py` file to predict a user  uploaded image. It uses the 
 RegNet model for the prediction and displays the probability the image is "van Gogh" or "not van Gogh"
 
+![alt-text](rando4.png "Prediction")
     
