@@ -34,7 +34,7 @@ The models have pre-trained weights with a trainable classifier. It uses three p
 ## Accuracy
 All three models achieved >90% accuracy during the validation runs after training.  The models results were fairly close with the Regnet model performing the best. 
 
-![alt-text](effnet 10.png "Accuracy")
+![alt-text](effnet10.png "Accuracy")
 
 ## Image Data
 A custom dataset was created for the training, testing, and validation. Images were downloaded and sorted into two classes: "Van Gogh" and "not Van Gogh".  
